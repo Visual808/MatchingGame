@@ -208,15 +208,24 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p4U-qw-Md2">
+                                <rect key="frame" x="167" y="428" width="42" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="p4U-qw-Md2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Nlk-VE-Zbb"/>
+                            <constraint firstItem="p4U-qw-Md2" firstAttribute="top" secondItem="xhR-e7-kYZ" secondAttribute="bottom" constant="22" id="aPa-Fi-SNl"/>
                             <constraint firstItem="xhR-e7-kYZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="bJt-zJ-2WD"/>
                             <constraint firstItem="xhR-e7-kYZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jAD-R9-uJT"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="gameLabel" destination="kqr-VL-94O" id="XGQ-pW-O0j"/>
+                        <outlet property="timerLabel" destination="p4U-qw-Md2" id="Mmu-np-5wm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

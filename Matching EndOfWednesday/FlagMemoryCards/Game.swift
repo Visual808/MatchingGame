@@ -20,16 +20,19 @@ struct Game {
     var gameDelegate: MatchingGameDelgate?
     var sound = AVAudioPlayer()
     var waitingForHidingCards = false
-
     
     var unmatchedCardsRevealed: [Int] = []
-
+    var cardsRemaining: [Int] = []
+    
+    init() {
+        newGame()
+    }
     
     mutating func flipCard(atIndexNumber index: Int) -> Bool {
         
         if waitingForHidingCards {return false}
         if !unmatchedCardsRevealed.isEmpty && unmatchedCardsRevealed[0] == index {return false}
-                
+        if !cardsRemaining.contains(index) {return false}
         
         if unmatchedCardsRevealed.count < 2 {
             unmatchedCardsRevealed.append(index)
@@ -39,6 +42,12 @@ struct Game {
                 let card2Name = deckOfCards.dealtCards[unmatchedCardsRevealed[1]]
                 
                 if card1Name == card2Name { //2nd card is a match
+                    
+                    for (indexCounter, cardIndexValue) in cardsRemaining.enumerated().reversed(){
+                        if cardIndexValue == unmatchedCardsRevealed[0] || cardIndexValue == unmatchedCardsRevealed[1] {
+                            cardsRemaining.remove(at: indexCounter)
+                        }
+                    }
                     self.speakCard(number: index)
                     unmatchedCardsRevealed.removeAll()
                 } else {                    //2nd card is NOT a match
@@ -58,7 +67,10 @@ struct Game {
     mutating func newGame(){
         playShuffleSound()
         deckOfCards.drawCards()
-
+        for (index, _) in deckOfCards.dealtCards.enumerated() {
+            cardsRemaining.append(index)
+        }
+        
     }
     
     mutating func resetUnmatchedCards() {
@@ -89,12 +101,12 @@ struct Game {
         sound.play()
     }
     
-
+    
     func speakCard(number cardTag: Int) {
         synthesizer.stopSpeaking(at: .immediate)
         let utterance = AVSpeechUtterance(string: deckOfCards.dealtCards[cardTag])
         synthesizer.speak(utterance)
         
     }
-
+    
 }

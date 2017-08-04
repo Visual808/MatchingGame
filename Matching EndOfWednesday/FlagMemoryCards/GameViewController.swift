@@ -8,18 +8,26 @@
 
 import UIKit
 import LTMorphingLabel
+import MZTimerLabel
 
 class GameViewController: UIViewController, MatchingGameDelgate {
     
     var game = Game()
     var gameNumber = 1
+    var stopwatch: MZTimerLabel!
+    
     
     @IBOutlet weak var gameLabel: LTMorphingLabel!
+    @IBOutlet weak var timerLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        stopwatch = MZTimerLabel.init(label: timerLabel)
+        stopwatch.timeFormat = "mm:ss"
+        stopwatch.start()
         game.gameDelegate = self
         gameLabel.morphingEffect = .burn
+        
     }
     
     @IBAction func cardTapped(_ sender: UIButton) {
