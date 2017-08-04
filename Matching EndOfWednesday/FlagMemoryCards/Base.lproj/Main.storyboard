@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Game View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="GameViewController" customModule="FlagMemoryCards" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="xhR-e7-kYZ">
+                                <rect key="frame" x="65.5" y="50" width="245" height="356"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game #1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kqr-VL-94O" customClass="LTMorphingLabel" customModule="LTMorphingLabel">
+                                        <rect key="frame" x="63.5" y="0.0" width="118.5" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="sWS-VS-pZV">
+                                        <rect key="frame" x="0.0" y="66" width="245" height="230"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="AWk-lh-zaP">
+                                                <rect key="frame" x="0.0" y="0.0" width="245" height="50"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MmT-36-wKM">
+                                                        <rect key="frame" x="0.0" y="0.0" width="75" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="Z64-6P-S6j"/>
+                                                            <constraint firstAttribute="width" secondItem="MmT-36-wKM" secondAttribute="height" multiplier="3:2" id="sai-zp-HBI"/>
+                                                        </constraints>
+                                                        <state key="normal" image="CardBack"/>
+                                                        <connections>
+                                                            <action selector="cardTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="12Y-Lm-EbE"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LBQ-dG-naa">
+                                                        <rect key="frame" x="85" y="0.0" width="75" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="LBQ-dG-naa" secondAttribute="height" multiplier="3:2" id="kqh-A3-IAi"/>
+                                                        </constraints>
+                                                        <state key="normal" image="CardBack"/>
+                                                        <connections>
+                                                            <action selector="cardTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="z06-VF-ASn"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mlw-b7-jFw">
+                                                        <rect key="frame" x="170" y="0.0" width="75" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="Mlw-b7-jFw" secondAttribute="height" multiplier="3:2" id="Wa8-0A-1Cg"/>
+                                                        </constraints>
+                                                        <state key="normal" image="CardBack"/>
+                                                        <connections>
+                                                            <action selector="cardTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oil-ph-Iz8"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="LBQ-dG-naa" firstAttribute="width" secondItem="LBQ-dG-naa" secondAttribute="height" multiplier="3:2" id="HuJ-Qx-CuO"/>
+                                                    <constraint firstItem="Mlw-b7-jFw" firstAttribute="width" secondItem="Mlw-b7-jFw" secondAttribute="height" multiplier="3:2" id="JGA-Fg-AS2"/>
+                                                    <constraint firstItem="Mlw-b7-jFw" firstAttribute="width" secondItem="Mlw-b7-jFw" secondAttribute="height" multiplier="3:2" id="dS1-p5-0MV"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qRb-Hd-erA">
+                                                <rect key="frame" x="0.0" y="60" width="245" height="50"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aKG-n3-kvX">
+                                                        <rect key="frame" x="0.0" y="0.0" width="75" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="aKG-n3-kvX" secondAttribute="height" multiplier="3:2" id="Khx-tE-ak6"/>
+                                                            <constraint firstAttribute="height" constant="50" id="ooy-au-r5g"/>
+                                                        </constraints>
+                                                        <state key="normal" image="CardBack"/>
+                                                        <connections>
+                                                            <action selector="cardTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VxH-gy-qcU"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dMz-9x-yNX">
+                                                        <rect key="frame" x="85" y="0.0" width="75" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="dMz-9x-yNX" secondAttribute="height" multiplier="3:2" id="Kfy-5w-gCT"/>
+                                                        </constraints>
+                                                        <state key="normal" image="CardBack"/>
+                                                        <connections>
+                                                            <action selector="cardTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lqw-OA-TWo"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kUT-y3-HBY">
+                                                        <rect key="frame" x="170" y="0.0" width="75" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="kUT-y3-HBY" secondAttribute="height" multiplier="3:2" id="JcW-e3-vyT"/>
+                                                        </constraints>
+                                                        <state key="normal" image="CardBack"/>
+                                                        <connections>
+                                                            <action selector="cardTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5aO-gK-2Fq"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="dMz-9x-yNX" firstAttribute="width" secondItem="dMz-9x-yNX" secondAttribute="height" multiplier="3:2" id="7xN-cQ-tOW"/>
+                                                    <constraint firstItem="kUT-y3-HBY" firstAttribute="width" secondItem="kUT-y3-HBY" secondAttribute="height" multiplier="3:2" id="8Fg-lY-lji"/>
+                                                    <constraint firstItem="kUT-y3-HBY" firstAttribute="width" secondItem="kUT-y3-HBY" secondAttribute="height" multiplier="3:2" id="gHh-Ug-QDi"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="hyx-wF-bVL">
+                                                <rect key="frame" x="0.0" y="120" width="245" height="50"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p43-zE-3n3">
+                                                        <rect key="frame" x="0.0" y="0.0" width="75" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="h4i-jO-h3g"/>
+                                                            <constraint firstAttribute="width" secondItem="p43-zE-3n3" secondAttribute="height" multiplier="3:2" id="uww-8u-U0h"/>
+                                                        </constraints>
+                                                        <state key="normal" image="CardBack"/>
+                                                        <connections>
+                                                            <action selector="cardTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ymQ-lV-E79"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hFP-sk-2QK">
+                                                        <rect key="frame" x="85" y="0.0" width="75" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="hFP-sk-2QK" secondAttribute="height" multiplier="3:2" id="SMU-Av-eyb"/>
+                                                        </constraints>
+                                                        <state key="normal" image="CardBack"/>
+                                                        <connections>
+                                                            <action selector="cardTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="are-Dz-paf"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GGl-6P-ybH">
+                                                        <rect key="frame" x="170" y="0.0" width="75" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="GGl-6P-ybH" secondAttribute="height" multiplier="3:2" id="8sn-oc-zya"/>
+                                                        </constraints>
+                                                        <state key="normal" image="CardBack"/>
+                                                        <connections>
+                                                            <action selector="cardTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e83-dm-Qmj"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="hFP-sk-2QK" firstAttribute="width" secondItem="hFP-sk-2QK" secondAttribute="height" multiplier="3:2" id="Wds-Jd-hWt"/>
+                                                    <constraint firstItem="GGl-6P-ybH" firstAttribute="width" secondItem="GGl-6P-ybH" secondAttribute="height" multiplier="3:2" id="WnM-a0-mve"/>
+                                                    <constraint firstItem="GGl-6P-ybH" firstAttribute="width" secondItem="GGl-6P-ybH" secondAttribute="height" multiplier="3:2" id="pE2-m6-JkE"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ws1-jV-6Gv">
+                                                <rect key="frame" x="0.0" y="180" width="245" height="50"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Xb-Q7-bUh">
+                                                        <rect key="frame" x="0.0" y="0.0" width="75" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="Ljr-GG-TiA"/>
+                                                            <constraint firstAttribute="width" secondItem="2Xb-Q7-bUh" secondAttribute="height" multiplier="3:2" id="nb7-iY-zwO"/>
+                                                        </constraints>
+                                                        <state key="normal" image="CardBack"/>
+                                                        <connections>
+                                                            <action selector="cardTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XHU-U9-31b"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iCo-K4-BFy">
+                                                        <rect key="frame" x="85" y="0.0" width="75" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="iCo-K4-BFy" secondAttribute="height" multiplier="3:2" id="EzJ-bQ-RIX"/>
+                                                        </constraints>
+                                                        <state key="normal" image="CardBack"/>
+                                                        <connections>
+                                                            <action selector="cardTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="G8P-tO-eQX"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t6T-Ta-00D">
+                                                        <rect key="frame" x="170" y="0.0" width="75" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="t6T-Ta-00D" secondAttribute="height" multiplier="3:2" id="UlW-uk-riZ"/>
+                                                        </constraints>
+                                                        <state key="normal" image="CardBack"/>
+                                                        <connections>
+                                                            <action selector="cardTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HBo-Y1-OqU"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="t6T-Ta-00D" firstAttribute="width" secondItem="t6T-Ta-00D" secondAttribute="height" multiplier="3:2" id="VI0-3O-EGD"/>
+                                                    <constraint firstItem="t6T-Ta-00D" firstAttribute="width" secondItem="t6T-Ta-00D" secondAttribute="height" multiplier="3:2" id="fe2-NW-9ec"/>
+                                                    <constraint firstItem="iCo-K4-BFy" firstAttribute="width" secondItem="iCo-K4-BFy" secondAttribute="height" multiplier="3:2" id="ii1-4r-Lbl"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dO7-sz-9yE">
+                                        <rect key="frame" x="85" y="326" width="75" height="30"/>
+                                        <state key="normal" title="New Game"/>
+                                        <connections>
+                                            <action selector="newGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xVh-sf-rza"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xhR-e7-kYZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="bJt-zJ-2WD"/>
+                            <constraint firstItem="xhR-e7-kYZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jAD-R9-uJT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="gameLabel" destination="kqr-VL-94O" id="XGQ-pW-O0j"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="36.431784107946029"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="CardBack" width="275" height="183"/>
+    </resources>
+</document>

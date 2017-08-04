@@ -1,0 +1,443 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3ECC25DAAACB830C83020214 /* Pods_FlagMemoryCards.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00244320BF0A26C5457F76BB /* Pods_FlagMemoryCards.framework */; };
+		EF0442E51F3161FC008D57D6 /* card-flip.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EF0442E31F3161FC008D57D6 /* card-flip.mp3 */; };
+		EF0442E61F3161FC008D57D6 /* shuffle.wav in Resources */ = {isa = PBXBuildFile; fileRef = EF0442E41F3161FC008D57D6 /* shuffle.wav */; };
+		EF695C391F1D96F4009CAEB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF695C381F1D96F4009CAEB7 /* AppDelegate.swift */; };
+		EF695C3B1F1D96F4009CAEB7 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF695C3A1F1D96F4009CAEB7 /* GameViewController.swift */; };
+		EF695C3E1F1D96F4009CAEB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF695C3C1F1D96F4009CAEB7 /* Main.storyboard */; };
+		EF695C401F1D96F4009CAEB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF695C3F1F1D96F4009CAEB7 /* Assets.xcassets */; };
+		EF695C431F1D96F4009CAEB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF695C411F1D96F4009CAEB7 /* LaunchScreen.storyboard */; };
+		EFB5240A1F2035BD006707B2 /* ArrayShuffle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB524091F2035BD006707B2 /* ArrayShuffle.swift */; };
+		EFB524101F204F37006707B2 /* DeckOfCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB5240F1F204F37006707B2 /* DeckOfCards.swift */; };
+		EFB524121F20541D006707B2 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB524111F20541D006707B2 /* Game.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		00244320BF0A26C5457F76BB /* Pods_FlagMemoryCards.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlagMemoryCards.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		31B2C060F181410780C14405 /* Pods-FlagMemoryCards.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlagMemoryCards.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlagMemoryCards/Pods-FlagMemoryCards.debug.xcconfig"; sourceTree = "<group>"; };
+		97BCC59FBC3FD1E1744DA430 /* Pods-FlagMemoryCards.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlagMemoryCards.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlagMemoryCards/Pods-FlagMemoryCards.release.xcconfig"; sourceTree = "<group>"; };
+		EF0442E31F3161FC008D57D6 /* card-flip.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "card-flip.mp3"; sourceTree = "<group>"; };
+		EF0442E41F3161FC008D57D6 /* shuffle.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = shuffle.wav; sourceTree = "<group>"; };
+		EF695C351F1D96F4009CAEB7 /* FlagMemoryCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlagMemoryCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF695C381F1D96F4009CAEB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EF695C3A1F1D96F4009CAEB7 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		EF695C3D1F1D96F4009CAEB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EF695C3F1F1D96F4009CAEB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF695C421F1D96F4009CAEB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EF695C441F1D96F4009CAEB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFB524091F2035BD006707B2 /* ArrayShuffle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayShuffle.swift; sourceTree = "<group>"; };
+		EFB5240F1F204F37006707B2 /* DeckOfCards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeckOfCards.swift; sourceTree = "<group>"; };
+		EFB524111F20541D006707B2 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF695C321F1D96F4009CAEB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3ECC25DAAACB830C83020214 /* Pods_FlagMemoryCards.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		24D617A73D8C677B53454EE1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				00244320BF0A26C5457F76BB /* Pods_FlagMemoryCards.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DB3C34EBD4CAC26060BE1591 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				31B2C060F181410780C14405 /* Pods-FlagMemoryCards.debug.xcconfig */,
+				97BCC59FBC3FD1E1744DA430 /* Pods-FlagMemoryCards.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EF695C2C1F1D96F4009CAEB7 = {
+			isa = PBXGroup;
+			children = (
+				EF695C371F1D96F4009CAEB7 /* FlagMemoryCards */,
+				EF695C361F1D96F4009CAEB7 /* Products */,
+				DB3C34EBD4CAC26060BE1591 /* Pods */,
+				24D617A73D8C677B53454EE1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EF695C361F1D96F4009CAEB7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF695C351F1D96F4009CAEB7 /* FlagMemoryCards.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF695C371F1D96F4009CAEB7 /* FlagMemoryCards */ = {
+			isa = PBXGroup;
+			children = (
+				EF695C3C1F1D96F4009CAEB7 /* Main.storyboard */,
+				EFB5240D1F20380E006707B2 /* Controllers */,
+				EFB5240C1F203805006707B2 /* Models */,
+				EFB5240B1F203783006707B2 /* Other */,
+			);
+			path = FlagMemoryCards;
+			sourceTree = "<group>";
+		};
+		EFB5240B1F203783006707B2 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				EFB5240E1F203819006707B2 /* Assets */,
+				EF695C381F1D96F4009CAEB7 /* AppDelegate.swift */,
+				EF695C411F1D96F4009CAEB7 /* LaunchScreen.storyboard */,
+				EF695C441F1D96F4009CAEB7 /* Info.plist */,
+				EFB524091F2035BD006707B2 /* ArrayShuffle.swift */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+		EFB5240C1F203805006707B2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EFB5240F1F204F37006707B2 /* DeckOfCards.swift */,
+				EFB524111F20541D006707B2 /* Game.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		EFB5240D1F20380E006707B2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EF695C3A1F1D96F4009CAEB7 /* GameViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		EFB5240E1F203819006707B2 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				EF695C3F1F1D96F4009CAEB7 /* Assets.xcassets */,
+				EF0442E31F3161FC008D57D6 /* card-flip.mp3 */,
+				EF0442E41F3161FC008D57D6 /* shuffle.wav */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF695C341F1D96F4009CAEB7 /* FlagMemoryCards */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF695C471F1D96F4009CAEB7 /* Build configuration list for PBXNativeTarget "FlagMemoryCards" */;
+			buildPhases = (
+				6F5834ECD18297F1AAB31241 /* [CP] Check Pods Manifest.lock */,
+				EF695C311F1D96F4009CAEB7 /* Sources */,
+				EF695C321F1D96F4009CAEB7 /* Frameworks */,
+				EF695C331F1D96F4009CAEB7 /* Resources */,
+				F0DE699278AB6649C15ECB29 /* [CP] Embed Pods Frameworks */,
+				BBF0829C9FC27B03556B96B1 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlagMemoryCards;
+			productName = FlagMemoryCards;
+			productReference = EF695C351F1D96F4009CAEB7 /* FlagMemoryCards.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF695C2D1F1D96F4009CAEB7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = DevTrain;
+				TargetAttributes = {
+					EF695C341F1D96F4009CAEB7 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 4BFK884J52;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = EF695C301F1D96F4009CAEB7 /* Build configuration list for PBXProject "FlagMemoryCards" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF695C2C1F1D96F4009CAEB7;
+			productRefGroup = EF695C361F1D96F4009CAEB7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF695C341F1D96F4009CAEB7 /* FlagMemoryCards */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF695C331F1D96F4009CAEB7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF695C431F1D96F4009CAEB7 /* LaunchScreen.storyboard in Resources */,
+				EF0442E51F3161FC008D57D6 /* card-flip.mp3 in Resources */,
+				EF695C401F1D96F4009CAEB7 /* Assets.xcassets in Resources */,
+				EF695C3E1F1D96F4009CAEB7 /* Main.storyboard in Resources */,
+				EF0442E61F3161FC008D57D6 /* shuffle.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6F5834ECD18297F1AAB31241 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BBF0829C9FC27B03556B96B1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlagMemoryCards/Pods-FlagMemoryCards-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0DE699278AB6649C15ECB29 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlagMemoryCards/Pods-FlagMemoryCards-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF695C311F1D96F4009CAEB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFB5240A1F2035BD006707B2 /* ArrayShuffle.swift in Sources */,
+				EFB524121F20541D006707B2 /* Game.swift in Sources */,
+				EFB524101F204F37006707B2 /* DeckOfCards.swift in Sources */,
+				EF695C3B1F1D96F4009CAEB7 /* GameViewController.swift in Sources */,
+				EF695C391F1D96F4009CAEB7 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EF695C3C1F1D96F4009CAEB7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF695C3D1F1D96F4009CAEB7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EF695C411F1D96F4009CAEB7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF695C421F1D96F4009CAEB7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF695C451F1D96F4009CAEB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EF695C461F1D96F4009CAEB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF695C481F1D96F4009CAEB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31B2C060F181410780C14405 /* Pods-FlagMemoryCards.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4BFK884J52;
+				INFOPLIST_FILE = FlagMemoryCards/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.devtraindallas.FlagMemoryCards;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		EF695C491F1D96F4009CAEB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97BCC59FBC3FD1E1744DA430 /* Pods-FlagMemoryCards.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4BFK884J52;
+				INFOPLIST_FILE = FlagMemoryCards/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.devtraindallas.FlagMemoryCards;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF695C301F1D96F4009CAEB7 /* Build configuration list for PBXProject "FlagMemoryCards" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF695C451F1D96F4009CAEB7 /* Debug */,
+				EF695C461F1D96F4009CAEB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF695C471F1D96F4009CAEB7 /* Build configuration list for PBXNativeTarget "FlagMemoryCards" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF695C481F1D96F4009CAEB7 /* Debug */,
+				EF695C491F1D96F4009CAEB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF695C2D1F1D96F4009CAEB7 /* Project object */;
+}
