@@ -170,7 +170,7 @@
 				TargetAttributes = {
 					EF695C341F1D96F4009CAEB7 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 4BFK884J52;
+						DevelopmentTeam = SU892GX7XS;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -391,7 +391,7 @@
 			baseConfigurationReference = 31B2C060F181410780C14405 /* Pods-FlagMemoryCards.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 4BFK884J52;
+				DEVELOPMENT_TEAM = SU892GX7XS;
 				INFOPLIST_FILE = FlagMemoryCards/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -406,7 +406,7 @@
 			baseConfigurationReference = 97BCC59FBC3FD1E1744DA430 /* Pods-FlagMemoryCards.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 4BFK884J52;
+				DEVELOPMENT_TEAM = SU892GX7XS;
 				INFOPLIST_FILE = FlagMemoryCards/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

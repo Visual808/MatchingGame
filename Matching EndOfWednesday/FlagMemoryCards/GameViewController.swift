@@ -26,14 +26,14 @@ class GameViewController: UIViewController, MatchingGameDelgate {
         let tagNum = sender.tag
         if game.flipCard(atIndexNumber: tagNum-1) {
             let thisImage = UIImage(named: game.deckOfCards.dealtCards[tagNum - 1])
-
+            
             UIView.transition(with: sender, duration: 0.5, options: .transitionFlipFromRight, animations: {
                 sender.setImage(thisImage, for: .normal)
             }, completion: nil)
             
-      
+            
         }
-     }
+    }
     
     @IBAction func newGame(_ sender: UIButton) {
         for tagNum in 1...12 {
@@ -66,18 +66,18 @@ class GameViewController: UIViewController, MatchingGameDelgate {
                 }
             }
             self.game.waitingForHidingCards = false  //All unmatched cards are hidden
-
+            
             
         }
         
-            
-            
-       
+        
+        
+        
     }
     
     
     
- 
-
+    
+    
 }
 
